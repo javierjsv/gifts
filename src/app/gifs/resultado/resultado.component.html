@@ -1,0 +1,20 @@
+<div class="row">
+
+	<div *ngFor="let item of results" class="col-6 col-md-4 animate__animated animate__faceIn ">
+		<div class="card m-4">
+
+			<div class="header">
+				<img [src]="item?.images?.downsized_medium?.url" [alt]="item?.title" class="img-fluid">
+			</div>
+
+			<div class="card-body">
+				<p class="card-text fw-bold">
+					{{item.title}}
+				</p>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
